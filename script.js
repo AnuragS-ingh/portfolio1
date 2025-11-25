@@ -1,8 +1,16 @@
+// Bubble animation
 const container = document.querySelector(".Intro-animation-container");
 const introSection = document.querySelector(".Introduction");
 const bubbles = [];
 const bubbleCount = 100;
-const colors = ["#ff0080", "#00ffff", "#ffff00", "#00ff00", "#ff6600", "#ff00ff"];
+const colors = [
+  "#ff0080",
+  "#00ffff",
+  "#ffff00",
+  "#00ff00",
+  "#ff6600",
+  "#ff00ff",
+];
 
 let mouse = { x: 0, y: 0, active: false };
 
@@ -128,7 +136,9 @@ function animate() {
     }
 
     // Apply transform
-    b1.el.style.transform = `translate(${b1.x - b1.radius}px, ${b1.y - b1.radius}px)`;
+    b1.el.style.transform = `translate(${b1.x - b1.radius}px, ${
+      b1.y - b1.radius
+    }px)`;
   });
 
   requestAnimationFrame(animate);

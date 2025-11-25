@@ -1,41 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <div class="main-container">
         <!-- Header section -->
-        <header>
+        <header id="home">
             <section class="Navigation-section">
                 <div class="logo"><span>Anurag Singh</span></div>
                 <ul class="navigation-link">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Skills</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </section>
 
-            <section class="Introduction">
+            <section class="Introduction" id="home">
                 <div class="Intro-animation-container"></div>
-               <div class="Intro-container">
-                 <div class="description">
-                    <h1>Hi, I am Anurag singh.</h1>
-                    <p>A front-End <span>Developer</span></p>
-                    <a href="#">Download CV</a>
+                <div class="Intro-container">
+                    <div class="description">
+                        <h1>Hi, I am Anurag singh.</h1>
+                        <p>A front-End <span>Developer</span></p>
+                        <a href="#">Download CV</a>
+                    </div>
+                    <div class="Image">
+                        <img src="./Assests/IMG_20240831_070241.jpg" alt="">
+                    </div>
                 </div>
-                <div class="Image">
-                    <img src="./Assests/IMG_20240831_070241.jpg" alt="">
-                </div>
-               </div>                
             </section>
         </header>
+
+        <div class="skillsSection" id="skills">
+            <h2 class="skillsHeading">Skills</h2>
+            <div class="slider" style=" --width:100px; --height:50px; --itemsNumber:10;">
+                <div class="list">
+                    <div class="items" style="--position:1"><img src="./Assests/Vite.png" alt=""></div>
+                    <div class="items" style="--position:2"><img src="./Assests/ApacheGroovy.png" alt=""></div>
+                    <div class="items" style="--position:3"><img src="./Assests/Node.js.png" alt=""></div>
+                    <div class="items" style="--position:4"><img src="./Assests/Polygon.png" alt=""></div>
+                    <div class="items" style="--position:5"><img src="./Assests/Vite.png" alt=""></div>
+                    <div class="items" style="--position:6"><img src="./Assests/ApacheGroovy.png" alt=""></div>
+                    <div class="items" style="--position:7"><img src="./Assests/Node.js.png" alt=""></div>
+                    <div class="items" style="--position:8"><img src="./Assests/Polygon.png" alt=""></div>
+                    <div class="items" style="--position:9"><img src="./Assests/Node.js.png" alt=""></div>
+                    <div class="items" style="--position:10"><img src="./Assests/Node.js.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="projectSection" id="project">
+            <h2 class="projectHeading">Projects</h2>
+            <div class="projectContainer">
+
+                <div class="projectCard">
+                    <div class="projectImage"><img src="./Assests/ApacheGroovy.png"></div>
+                    <div class="projectDescription">
+                        <h3 class="projectName">Project Name</h3>
+                        <p>This is the product descripttion and this will tells us about thee project</p>
+                    </div>
+                    <div class="button">
+                        <a href="#" class="projectButton">View project</a>
+                    </div>
+                </div>
+
+                <div class="projectCard">
+                    <div class="projectImage"><img src="./Assests/ApacheGroovy.png"></div>
+                    <div class="projectDescription">
+                        <h3 class="projectName">Project Name</h3>
+                        <p>This is the product descripttion and this will tells us about thee project</p>
+                    </div>
+                    <div class="button">
+                        <a href="#" class="projectButton">View project</a>
+                    </div>
+                </div>
+
+                <div class="projectCard">
+                    <div class="projectImage"><img src="./Assests/ApacheGroovy.png"></div>
+                    <div class="projectDescription">
+                        <h3 class="projectName">Project Name</h3>
+                        <p>This is the product descripttion and this will tells us about thee project</p>
+                    </div>
+                    <div class="button">
+                        <a href="#" class="projectButton">View project</a>
+                    </div>
+                </div>
+
+                <div class="projectCard">
+                    <div class="projectImage"><img src="./Assests/ApacheGroovy.png"></div>
+                    <div class="projectDescription">
+                        <h3 class="projectName">Project Name</h3>
+                        <p>This is the product descripttion and this will tells us about thee project</p>
+                    </div>
+                    <div class="button">
+                        <a href="#" class="projectButton">View project</a>
+                    </div>
+                </div>
+
+                <div class="projectCard">
+                    <div class="projectImage"><img src="./Assests/ApacheGroovy.png"></div>
+                    <div class="projectDescription">
+                        <h3 class="projectName">Project Name</h3>
+                        <p>This is the product descripttion and this will tells us about thee project</p>
+                    </div>
+                    <div class="button">
+                        <a href="#" class="projectButton">View project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-    
     <script src="script.js"></script>
 </body>
+
 </html>
