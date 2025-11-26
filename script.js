@@ -145,3 +145,25 @@ function animate() {
 }
 
 animate();
+
+
+// for the cross and reaapear button of the navigation link
+
+const menuButton = document.querySelector("#hamburger");
+const crossButton = document.querySelector("#cross-icon");
+const menuBox = document.querySelector(".navigation-link");
+const links = document.querySelectorAll(".links")
+
+links.forEach((link)=>{
+  link.addEventListener('click',()=>{
+    menuBox.style.left = "-100%"
+  })
+})
+
+menuButton.addEventListener('click',()=>{
+  menuBox.style.left = 0
+});
+
+crossButton.addEventListener('click',()=>{
+  menuBox.style.left = "-100%"
+})

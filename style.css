@@ -7,6 +7,10 @@
   font-family: "Montserrat Alternates";
 }
 
+html {
+  scroll-behavior: smooth; /* Add this line */
+}
+
 body {
   overflow-x: hidden;
   background-image: url(./Assests/doodle/doodl2.png),
@@ -28,16 +32,16 @@ body {
     url(./Assests/doodle/doodle1.png), url(./Assests/doodle/doodle3.png),
     url(./Assests/doodle/doodle4.png), url(./Assests/doodle/doodle6.png),
     url(./Assests/doodle/doodle7.png),url(./Assests/doodle/doodle5.png),url(./Assests/doodle/doodle8.png),url(./Assests/doodle/doodle9.png),url(./Assests/doodle/doodle10.png);
-  background-position: 15% 23%,
-    82% 67%,
-    37% 88%,
-    91% 12%,
-    8% 45%,
-    65% 83%,
-    23% 71%,
-    78% 29%,
-    44% 56%,
-    12% 89%;
+  background-position:15% 23%,
+  82% 67%,
+  91% 12%,
+  8% 45%,
+  65% 83%,
+  23% 71%,
+  78% 29%,
+  12% 89%,
+  87% 34%,
+  5% 31%;
   background-repeat: no-repeat;
   background-size: 40px 40px, 40px 40px, 40px 40px, 40px 40px, 40px 40px,
     40px 40px,40px 40px,40px 40px,40px 40px,40px 40px;
@@ -56,7 +60,11 @@ header {
   border-bottom: 2px solid gray;
   align-items: center;
   padding: 20px 0;
+  position: fixed;
+  top: 0;
   justify-content: space-between;
+  background-color: whitesmoke;
+  z-index: 3;
 }
 
 .Navigation-section .logo span {
@@ -377,19 +385,53 @@ header {
 
   .Navigation-section {
   width: 100%;
+  height: 10vh;
   display: flex;
   border-bottom: 2px solid gray;
   align-items: center;
-  padding: 20px 0;
   justify-content: space-between;
 }
 
-.navigation-link li {
-  margin-right: 0rem;
-  font-size: 1.1rem;
-  color: rgb(0, 0, 0);
-  cursor: pointer;
-} 
+.navigation-link
+{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  top: 0;
+  flex-direction: column;
+  background-color: rgba(50, 50, 50, 0.847);
+  z-index: 3;
+  left: -100%;
+  transition: all 0.3s linear;
+}
+
+#hamburger
+{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.navigation-link li a
+{
+  display: inline-block;
+  margin: 20px;
+  color: white;
+}
+
+#cross-icon
+{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 500;
+}
+
+
+
 /* navigation needed to be styled latter */
 
 .Navigation-section .logo span {
