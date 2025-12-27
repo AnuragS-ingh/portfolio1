@@ -288,6 +288,8 @@ header {
 .projectCard {
   width: 300px;
   border-radius: 20px;
+  height:300px;
+  max-height: 300px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -298,13 +300,14 @@ header {
 }
 
 .projectCard .projectImage {
-  height: 60%;
+  height: 50%;
   width: 100%;
   /* background-color: red; */
 }
 
 .projectImage img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
